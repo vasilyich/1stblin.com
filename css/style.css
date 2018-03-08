@@ -1,0 +1,192 @@
+body {
+	margin:0;
+}
+
+/* styles used in paragrahps on ref page */
+.textheader {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 20px;
+}
+
+.textnormal {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+}
+
+.icon {
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+}
+
+.musescoreicon{
+	width: 55px;
+	height: 35px;
+	vertical-align: middle;
+}
+
+.container {
+	position: relative;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.1);
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+.header {
+	text-transform: uppercase;
+        position:relative;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	background-color:white;
+	border-radius: 20px;
+	vertical-align: middle;
+}
+
+.topmenu {
+	height:60px;
+}
+
+.topmenu ul {
+	padding: 0;
+	height:60px;
+	font-size: 0;
+}
+
+.menu li {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 18%;
+}
+
+.menu li:nth-child(2) {
+    margin-right: 240px;
+    text-align: center;
+}
+
+.flags {
+	float:right;
+	padding:15px 10px 0 10px;
+}
+.flags a {
+	width:25px;
+	height:25px;
+	float:left;
+	margin-left:10px;
+}
+
+.flags a:hover {
+	background: url("../img/ru.png") no-repeat;
+	opacity: 0.4;
+}
+
+.logo {
+	position: absolute;
+	left: 45%;
+	top: 0;
+	margin:0;
+	margin-left: -47px;
+	margin-right: auto;
+	width: 128px;
+	height: 60px;
+}
+
+.menu li a:link,
+.menu li a:visited,
+.menu li a:hover,
+.menu li a:active {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	line-height: 60px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+
+.menu li a:hover { color: #a8c9df; background-color: #f2f2f2; }
+.menu .active a:active { color: rgba(96,78,67,0.3); }
+
+.aboutme {
+	text-align:center;
+	margin:0;
+	padding-top:10px;
+	padding-right:80px;
+}
+
+.my_photo {
+	width: 600px;
+	height: 400px;
+}
+
+.form {
+	margin-left:30px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	display:block;
+	width: 40%; /* Full width */
+	padding: 12px; /* Some padding */  
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.mycontacts{
+	margin:20px 0 0 30px;
+}
+
+.songstab {
+	margin:50px 0 0 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.songstab td:nth-child(4) {
+	text-align: center;
+} 
+
+.songstab th {
+	background: #AFCDE7;
+	color: white;
+	padding: 10px 20px;
+}
+
+.songstab th, td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}
+
+.songstab td {
+	background: #D8E6F3;
+}
