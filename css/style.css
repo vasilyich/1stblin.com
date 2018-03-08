@@ -21,6 +21,11 @@ body {
 	vertical-align: middle;
 }
 
+.blue_star {
+	width: 17px;
+	height: 17px;
+}
+
 .musescoreicon{
 	width: 55px;
 	height: 35px;
@@ -168,11 +173,11 @@ input[type=submit]:hover {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size: 14px;
 	border-collapse: collapse;
-	text-align: left;
+	text-align: center;
 }
 
-.songstab td:nth-child(4) {
-	text-align: center;
+.songstab td:nth-child(3) {
+	text-align: left;
 } 
 
 .songstab th {

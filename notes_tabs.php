@@ -36,34 +36,40 @@
 		<th>Watch Online</th>
 		<th>Buy</th>
 	</tr>
-<!--  php code starts here -->
-	<?php
+<?php
 	include("startup.php");
 	startup();
-	$result = mysql_query("SELECT song_id, title_rus, difficulty, description, song_url, buy_url  FROM  song");
+	$result = mysql_query("SELECT * FROM  song");
 	if (!$result)
 		die(mysql_error());
 	
 	while($row = mysql_fetch_assoc($result))
 	{
-	echo"<tr>";
-		echo "<td>{$row['song_id']}</td>";
-		echo "<td><img src='songs/{$row['song_id']}/pic.jpg'></td>";
-		echo "<td>{$row['title_rus']}</td>";
-		echo "<td>";
-				$dif = $row['difficulty'];
-				for ($i = 0; $i < $dif; $i++)
-					echo '<img src="img/blue_star.png" width="17" height="17" >' ;
+		echo "    <tr>\n";
+		echo "        <td>{$row['song_id']}</td>\n";
+		echo "        <td><img src='songs/{$row['song_id']}/pic.jpg'></td>\n";
+		echo "        <td>{$row['title_eng']}</td>\n";
+		echo "        <td>\n";
+		
+		$dif = $row['difficulty'];
+		for ($i = 0; $i < $dif; $i++) {
+			echo '            <img src="img/blue_star.png" class="blue_star">';
+			echo "\n";
+		}
 			
-		echo"</td>";
-		echo '<td> <a href="html/songDetail.php?id= '.$row['song_id'].'">Info</a></td>';
-		echo "<td> <a href='{$row['song_url']}' target='_blank'>Watch Online</a></td>";
-		echo "<td> <a href='{$row['buy_url']}' target='_blank'>Buy</a></td>";
-	echo"<tr>";
+		echo "        </td>\n";
+		echo '        <td><a href="songDetail.php?id='.$row['song_id'].'">Info</a></td>';
+		echo "\n";
+		echo "        <td><a href='{$row['song_url']}' target='_blank'>Watch Online</a></td>\n";
+
+		if ( empty($row['buy_url']) ) {
+			echo "        <td>&nbsp</td>\n";
+		} else {
+			echo "        <td><a href='{$row['buy_url']}' target='_blank'>Buy</a></td>\n";
+		}
+		echo"    </tr>\n";
 	}
 ?>			
-
-<!--  php code ends here -->
 	</table>
 	<br>
 	</div>
