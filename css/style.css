@@ -1,7 +1,9 @@
 body {
 	margin:0;
 }
-
+select{
+	border:none;
+}
 /* styles used in paragrahps on ref page */
 .textheader {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -44,7 +46,7 @@ body {
 
 .header {
 	text-transform: uppercase;
-        position:relative;
+    position:relative;
 	padding-top:5px;
 	padding-bottom:5px;
 	margin-bottom:5px;
@@ -77,20 +79,54 @@ body {
 }
 
 .flags {
-	float:right;
-	padding:15px 10px 0 10px;
+	position:absolute;
+	position: absolute;
+	left: 95%;
+	top: 20px;
+	margin:0;
+	margin-right: auto;
+	width: 40px;
+
+
 }
-.flags a {
-	width:25px;
-	height:25px;
-	float:left;
-	margin-left:10px;
+option
+{
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+option:hover
+{
+	background-color: #eee;
 }
 
-.flags a:hover {
+
+/*.flags option:hover {
 	background: url("../img/ru.png") no-repeat;
 	opacity: 0.4;
+}*/
+.icon-ru
+{
+background: url('../img/ru.png') no-repeat;
+
+padding-left: 23px;
+background-position: 0 1px;
 }
+.icon-en
+{
+background: url('../img/en.png') no-repeat;
+padding-left: 23px;
+background-position: 0 1px;
+}
+select.icon-en,
+select.icon-ru
+{
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 16px;
+	background-position: 0 1px;
+}
+
 
 .logo {
 	position: absolute;
@@ -137,7 +173,7 @@ body {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text],textarea {
 	display:block;
 	width: 40%; /* Full width */
 	padding: 12px; /* Some padding */  
@@ -169,7 +205,7 @@ input[type=submit]:hover {
 }
 
 .songstab {
-	margin:50px 0 0 20px;
+	margin:50px 80px 20px 0;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size: 14px;
 	border-collapse: collapse;
@@ -186,12 +222,19 @@ input[type=submit]:hover {
 	padding: 10px 20px;
 }
 
-.songstab th, td {
+#songs th, td {
 	border-style: solid;
 	border-width: 0 1px 1px 0;
 	border-color: white;
 }
-
+#hometable td{
+	border-style: none;
+}
 .songstab td {
 	background: #D8E6F3;
+}
+.main_body_music {
+	display:flex;
+	Justify-content:center;
+	
 }
