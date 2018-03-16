@@ -3,8 +3,8 @@ function startup()
 {
 	
 	$hostname = 'localhost';
-	$username = 'root';
-	$password = '';
+	$username = 'a0181256_admin';
+	$password = 'Alex333';
 	$dbName   = 'a0181256_mymusic';
 	
 	setlocale(LC_ALL, 'ru_RU.CP1251');

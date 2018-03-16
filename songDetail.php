@@ -1,52 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Alexey's place on a web</title>
-        <link rel="stylesheet" href="css/style.css">
-        <meta charset="UTF-8">
-        <meta name="description" content="Arrangements for Guitar Solo">
-        <meta name="keywords" content="guitar, classical guitar, arrangement, notes, tabs">
-        <meta name="author" content="Alexey Vasilyev">       	
-    </head>
-    <body>
-    <div class="container">
-      <header class="header">
-      <nav class="topmenu">
-	<div class="flags">
-  	  <a href="" title="Russian" class="langru"><img src="img/ru.png" alt="Russian" ></a>	
-	  <a href="" title="English" class="langeng"><img src="img/en.png" alt="English" ></a>
-	</div>	
-	<figure class="logo">
-	  <img src="img/logo.png" alt="logo" width="138" height="70">
-	</figure>	
-      <ul class="menu">
-			<li class="menu_item"><a href="index.html"><img src="img/home_icon.png" class="icon">&nbsp&nbspHome</a></li>
-            <li class="menu_item"><a href="notes_tabs.php"><img src="img/music_sheet.png" class="musescoreicon">&nbsp&nbspMusic Scores</a></li>
-            <li class="menu_item"><a href="refs.html"><img src="img/links_icon.png" class="icon">&nbsp&nbspLinks</a></li>
-            <li class="menu_item"><a href="contacts.html"><img src="img/contacts_icon.png" class="icon">&nbsp&nbspContacts</a></li>
-      </ul>
-      </nav>
-      </header>
-	  <div>
-<?php 
+<?php
 	include("startup.php");
 	startup();
+    include('setlang.php');
 	
 	if (isset($_GET['id']))
 	{
 		$id = $_GET['id'];
-		$result = mysql_query("SELECT * FROM  song where song_id=$id");	
+		$lang_id = $_SESSION['lang'];
+		$result = mysql_query("SELECT * FROM arrangement where song_id = $id and lang_id = '".$lang_id."'");	
 	}
 	if (!$result)
 		die(mysql_error());
-	
+
+    include('translate.php');
+    translate('head.xsl');
+?>
+    <body>
+    <div class="container">
+        <header class="header">
+        <nav class="topmenu">
+<?php translate('flags.xsl', 'songDetail.php?id=$id'); ?>
+        <figure class="logo">
+            <img src="img/logo.png" alt="logo" width="138" height="70">
+        </figure>
+<?php translate('mainmenu.xsl'); ?>
+      </nav>
+      </header>
+	  <div>
+<?php 
 	$row = mysql_fetch_assoc($result);
 	if (!isset($row['song_id']))
 	{
 		echo"<strong>Data not found</strong>\n";
 		die(mysql_error());
 	}
-	echo "<p class='title_eng'>{$row['title_eng']}</p>\n";
+	echo "<p class='title_eng'>{$row['arrangement_title']}</p>\n";
 ?>
 	<br/>
 		<div id="songs" class="song-info">
@@ -58,7 +48,8 @@
 				{
 					echo '<img src="img/blue_star.png" class="blue_star" \n>';
 					echo "\n";
-				}?></td>
+				}?>
+			</td>
 		</tr>
 		<tr>
 			<th>Tuning</th>

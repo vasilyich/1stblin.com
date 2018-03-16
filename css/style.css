@@ -1,9 +1,7 @@
 body {
 	margin:0;
 }
-select{
-	border:none;
-}
+
 /* styles used in paragrahps on ref page */
 .textheader {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -77,58 +75,23 @@ select{
     margin-right: 240px;
     text-align: center;
 }
-.flags{
+
+.flags {
 	float:right;
 	padding:15px 10px 0 10px;
 }
+
 .flags a{
 	width:25px;
 	height:25px;
 	float:left;
 	margin-left:10px;
 }
+
 .flags a:hover {
   background: url("../img/ru.png") no-repeat;
   opacity: 0.4;
 }
-option
-{
-	padding-left: 20px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-option:hover
-{
-	background-color: #eee;
-}
-
-
-/*.flags option:hover {
-	background: url("../img/ru.png") no-repeat;
-	opacity: 0.4;
-}*/
-.icon-ru
-{
-background: url('../img/ru.png') no-repeat;
-
-padding-left: 23px;
-background-position: 0 1px;
-}
-.icon-en
-{
-background: url('../img/en.png') no-repeat;
-padding-left: 23px;
-background-position: 0 1px;
-}
-select.icon-en,
-select.icon-ru
-{
-	padding-top: 2px;
-	padding-bottom: 3px;
-	padding-left: 16px;
-	background-position: 0 1px;
-}
-
 
 .logo {
 	position: absolute;
@@ -302,4 +265,3 @@ input[type=submit]:hover {
 	outline: none;
 
 }
-

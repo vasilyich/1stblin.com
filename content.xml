@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="aaa.xsl"?>
+<content>
+    <title lang="en">Alexey Vasilyev's place on a web</title>
+    <title lang="ru">Сайт Алексея Васильева</title>
+    <meta lang="en">
+        <desc>Arrangements for Guitar Solo</desc>
+        <keywords>guitar, classical guitar, arrangement, notes, tabs, music sheets</keywords>
+        <author>Alexey Vasilyev</author>
+    </meta>
+    <meta lang="ru">
+        <desc>Аранжировки для гитары соло</desc>
+        <keywords>гитара соло, классическая гитара, аранжировки, ноты, табы</keywords>
+        <author>Алексей Васильев</author>
+    </meta>
+	<topmenu>
+		<menuitems lang="en">
+			<item id="1">  Home</item>
+			<item id="2">  Music Scores</item>
+			<item id="3">  Links</item>
+			<item id="4">  Contacts</item>
+		</menuitems>
+		<flags lang="en">
+			<ru>Russian</ru>
+			<en>English</en>
+		</flags>
+		<menuitems lang="ru">
+			<item id="1">  Домашняя</item>
+			<item id="2">  Ноты/Табы</item>
+			<item id="3">  Ссылки</item>
+			<item id="4">  Контакты</item>
+		</menuitems>
+		<flags lang="ru">
+			<ru>Русский</ru>
+			<en>Английский</en>
+		</flags>
+	</topmenu>
+	<page name="index" lang="en">
+		<textline>My name is Alexey Vasilyev. I am hobbyist classical guitar player, who spends time playing different sounds, listing to them, learning new tricks, trying to grasp the musical theory and the art of making guitar arrangements. On a practical side, this allows me to play melodies i've always wanted to play before but did not know how. Last but not least I have lots of fun in doing so. Music washes negativity away.</textline>
+		<textline>I am not doing this all by myself. One of the best things i have done since I last picked up my guitar from the dusty shelf was to seek help from a professional musician. Very grateful to my teacher for the improvements I see in my playing in recent years!</textline>
+		<textline>This web site is designed to share the melodies i play on my youtube channel with anyone interested to learn them. This is all it does. Mostly this isn't difficult stuff to play. Some music scores and tabs here are free, some are not. If interested, please proceed to the Music Score tab.</textline>
+		<textline>Thanks for stoping by. Wish you all the best which life has to offer :)</textline>
+	</page>
+	<page name="index" lang="ru">
+		<textline>Меня зовут Алексей Васильев. Я классический гитарист любитель. Люблю проводить время за игрой на гитаре: производить на свет звуки, слушать их и играть заново, учить новые приемы игры, изучать теорию музыки а также постигать мастерство создания гитарных аранжировок. В практическом плане занятия музыкой постепенно открывают передо мной возможность играть любимые мелодии, которые давно хотел сыграть но не знал как. Вернее знал, но мог только прокрутить в голове или промурлыкать себе под нос. Самое главное, занятия музыкой настраивают меня на позитив, являются своего рода отдушиной для освобождения от негативных эмоций.</textline>
+		<textline>Занимаюсь гитарой я не самостоятельно. Пожалуй одно из самых правильных решений которое посетило меня вскоре после того как я в очередной раз достал гитару с пыльной полки было решение обратиться за помощью к профессиональному музыканту и педагогу. Очень благодарен своему учителю за прогресс который я наблюдаю в своем развитии в последние годы.</textline>
+		<textline>Этот сайт предназначен для желающих разучить мелодии и переложения для гитары соло которые я создал под руководством моего педагога и играю на моем канале. В большинстве своем это несложные произведения в техническом плане, отражающие мой текущий уровень владения инструментом. Кому интересно, заходим в раздел Ноты/Табы.</textline>
+		<textline>Спасибо за просмотр. Всего вам самого наилучшего :)</textline>
+	</page>
+	<page name="notes_tabs" lang="en">
+	    <tableheader>
+	        <item>No.</item>
+	        <item>Img</item>
+	        <item>Melody Title</item>
+	        <item>Difficulty</item>
+	        <item>Details</item>
+	        <item>Watch online</item>
+	        <item>Download</item>
+	    </tableheader>
+	</page>
+	<page name="notes_tabs" lang="ru">
+	    <tableheader>
+	        <item>Код</item>
+	        <item>Картинка</item>
+	        <item>Название Мелодии</item>
+	        <item>Сложность</item>
+	        <item>Описание</item>
+	        <item>Смотреть онлайн</item>
+	        <item>Загрузить</item>
+	    </tableheader>
+	</page>	
+</content>
