@@ -6,25 +6,25 @@
         <meta charset="UTF-8">
         <meta name="description" content="Arrangements for Guitar Solo">
         <meta name="keywords" content="guitar, classical guitar, arrangement, notes, tabs">
-        <meta name="author" content="Alexey Vasilyev">     
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>		
+        <meta name="author" content="Alexey Vasilyev">       	
     </head>
-		<script src="js/select.js"></script>	
     <body>
     <div class="container">
       <header class="header">
       <nav class="topmenu">
-	<select class="flags">
-  	  <option value="1" class="icon-en" selected></option>
-	  <option value="0" class="icon-ru"></option>
-	</select>
-          <figure class="logo"><img src="img/logo.png" alt="logo" width="138" height="70"></figure>	
-        <ul class="menu">
-            <li class="menu_item"><a href="index.html"><img src="img/home_icon.png" class="icon">&nbsp&nbspHome</a></li>
+	<div class="flags">
+  	  <a href="" title="Russian" class="langru"><img src="img/ru.png" alt="Russian" ></a>	
+	  <a href="" title="English" class="langeng"><img src="img/en.png" alt="English" ></a>
+	</div>	
+	<figure class="logo">
+	  <img src="img/logo.png" alt="logo" width="138" height="70">
+	</figure>	
+      <ul class="menu">
+			<li class="menu_item"><a href="index.html"><img src="img/home_icon.png" class="icon">&nbsp&nbspHome</a></li>
             <li class="menu_item"><a href="notes_tabs.php"><img src="img/music_sheet.png" class="musescoreicon">&nbsp&nbspMusic Scores</a></li>
             <li class="menu_item"><a href="refs.html"><img src="img/links_icon.png" class="icon">&nbsp&nbspLinks</a></li>
             <li class="menu_item"><a href="contacts.html"><img src="img/contacts_icon.png" class="icon">&nbsp&nbspContacts</a></li>
-        </ul>
+      </ul>
       </nav>
       </header>
       <div class="main_body_music">

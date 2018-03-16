@@ -77,17 +77,19 @@ select{
     margin-right: 240px;
     text-align: center;
 }
-
-.flags {
-	position:absolute;
-	position: absolute;
-	left: 95%;
-	top: 20px;
-	margin:0;
-	margin-right: auto;
-	width: 40px;
-
-
+.flags{
+	float:right;
+	padding:15px 10px 0 10px;
+}
+.flags a{
+	width:25px;
+	height:25px;
+	float:left;
+	margin-left:10px;
+}
+.flags a:hover {
+  background: url("../img/ru.png") no-repeat;
+  opacity: 0.4;
 }
 option
 {
