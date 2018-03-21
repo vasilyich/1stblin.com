@@ -100,8 +100,8 @@ body {
 	margin:0;
 	margin-left: -47px;
 	margin-right: auto;
-	width: 128px;
-	height: 60px;
+	width: 138px;
+	height: 70px;
 }
 
 .menu li a:link,
@@ -175,6 +175,7 @@ input[type=submit]:hover {
 	font-size: 14px;
 	border-collapse: collapse;
 	text-align: center;
+
 }
 
 .songstab td:nth-child(3) {
@@ -203,17 +204,15 @@ input[type=submit]:hover {
 	Justify-content:center;
 	
 }
-.title_eng{
-	height: 50px;
-	text-align:center;
-	padding:22px 70px 0 0;
+.arrangement_title{
+	height: 55px;
 	font-family: "PT Sans", "Arial", sans-serif;
-	font-size:x-large;
-	background:#D8E6F3;
-	margin:0;
+	text-transform:uppercase;
+
 }
 .details {
-	margin:0 0 0 20%;
+	width:710px;
+	margin:0 0 0 16%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	border-collapse: collapse;
@@ -221,26 +220,27 @@ input[type=submit]:hover {
 	padding: 10px 20px;
 	background: #D8E6F3;
 	}
-.details td,th{
+.details td{
 	padding :10px 30px 10px 30px;
+	width:355px;
+}
+.details th{
+	padding :10px 30px 10px 30px;
+	width:355px;
 }
 
 
 .responsive-container {
 	position: relative;
-	padding:44% 65% 0 50px;
-	height: 0;
-	overflow: hidden;
+
 }
 .responsive-container, .responsive-container iframe {
 	max-height: 520px;
+	padding:15px 0 15px 0;
 }
 .responsive-container iframe {
-	width:703px;
-	height:495px;
-	position: absolute;
-	top: 5px;
-	left: 20%;
+	width:690px;
+	height:485px;
 }
 .arrow{
 	width: 48px;
@@ -248,15 +248,38 @@ input[type=submit]:hover {
 	vertical-align: top;
 }
 .arrowback{
-	margin: 0 0 10px 20%;
-	width: 135px;
+	margin: 0 0 10px 16%;
+	width: 145px;
 	height:48px;
 	background: #D8E6F3;
 	border-radius: 20px;
+	display:inline-block;
 	
 }
 .arrowback a{
-	display: block;
+	font-size: 20px;
+	line-height:48px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	outline: none;
+
+}
+.buynow{
+	width: 48px;
+	height: 48px;
+	vertical-align: top;
+}
+.buynow{
+	margin: 0 0 10px 37%;
+	width: 145px;
+	height:48px;
+	background: #D8E6F3;
+	border-radius: 20px;
+	display:inline-block;
+	
+}
+.buynow a{
 	font-size: 20px;
 	line-height:48px;
 	font-weight: bold;
