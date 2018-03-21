@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
 	include("startup.php");
 	startup();
@@ -17,6 +15,8 @@
     include('translate.php');
     translate('head.xsl');
 ?>
+<!DOCTYPE html>
+<html>
     <body>
     <div class="container">
         <header class="header">
@@ -36,14 +36,18 @@
 		echo"<strong>Data not found</strong>\n";
 		die(mysql_error());
 	}
-	echo "<p class='title_eng'>{$row['arrangement_title']}</p>\n";
+	
 ?>
 	<br/>
 		<div id="songs" class="song-info">
 		<table class="details">
 		<tr>
+		<th class="arrangement_title" colspan="2"><?="{$row['arrangement_title']}\n"?></th>
+		
+		</tr>
+		<tr>
 			<th>Difficulty</th>
-			<td width="490"><?php $dif = $row['difficulty'];
+			<td><?php $dif = $row['difficulty'];
 				for ($i = 0; $i < $dif; $i++)
 				{
 					echo '<img src="img/blue_star.png" class="blue_star" \n>';
@@ -60,17 +64,25 @@
 			<td><?="{$row['original_key']}\n"?></td>
 		</tr>
 		<tr>
-			<th>Description</th>
-			<td><?="{$row['description']}\n"?></td>
+			<td class="responsive-container" colspan="2"><iframe  src="<?="{$row['embed_code']}\n"?>" frameborder="0" allowfullscreen></iframe></td>
+		</tr>
+		<tr>
+			<th colspan="2">Description</th>
+		</tr>
+		<tr>
+			<td colspan="2"><?="{$row['description']}\n"?></td>
 		</tr>
 		</table>
-		</div>
-		<div class="responsive-container">
-	<iframe  src="<?="{$row['embed_code']}\n"?>" frameborder="0" allowfullscreen></iframe>
-		</div>
+		</div><br/>
+		
 		<div class="arrowback"> 
 			<a href="notes_tabs.php"><img src="img/arrow.png" class="arrow">&nbsp&nbsp&nbspBack&nbsp</a>
-		</div></br>
+		</div>
+		<div class="buynow"> 
+			<a href=""><img src="img/cart.png" class="arrow">&nbsp&nbsp&nbspBuy&nbsp</a>
+		</div>
+		<br/><br/>		
+
 	  </div>
 	</div>
 </body>	
