@@ -44,7 +44,7 @@ body {
 
 .header {
 	text-transform: uppercase;
-    position:relative;
+	position:relative;
 	padding-top:5px;
 	padding-bottom:5px;
 	margin-bottom:5px;
@@ -205,11 +205,9 @@ input[type=submit]:hover {
 	
 }
 .arrangement_title{
-	height: 55px;
-	padding:15px 0 15px 0; 
+	height: 35px;
+	padding:5px 0 5px 0; 
 	font-family: "PT Sans", "Arial", sans-serif;
-	text-transform:uppercase;
-
 }
 .details {
 	width:710px;
