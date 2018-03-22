@@ -49,10 +49,14 @@
 			$diff = "Difficulty";
 			$tun = "Tuning";
 			$key = "Key";
+			$back = "Back";
+			$buy = "Buy";
 		} else {
 			$diff = "Сложность";
 			$tun = "Строй";
 			$key = "Тональность";
+			$back = "Назад";
+			$buy = "Купить";
 		}
 ?>              	<th><?="{$diff}"?></th>
 			<td>
@@ -67,26 +71,26 @@
 		</tr>
 		<tr>
 			<th><?="{$tun}"?></th>
-			<td><?="{$row['tuning']}\n"?></td>
+			<td><?="{$row['tuning']}"?></td>
 		</tr>
 		<tr>
 			<th><?="{$key}"?></th>
-			<td><?="{$row['original_key']}\n"?></td>
+			<td><?="{$row['original_key']}"?></td>
 		</tr>
 		<tr>
-			<td class="responsive-container" colspan="2"><iframe  src="<?="{$row['embed_code']}\n"?>" frameborder="0" allowfullscreen></iframe></td>
+			<td class="responsive-container" colspan="2"><iframe  src="<?="{$row['embed_code']}"?>" frameborder="0" allowfullscreen></iframe></td>
 		</tr>
 		<tr>
-			<td colspan="2"><?="{$row['description']}\n"?></td>
+			<td colspan="2"><?="{$row['description']}"?></td>
 		</tr>
 		</table>
 		</div>
 		<br/>
 		<div class="arrowback"> 
-			<a href="notes_tabs.php"><img src="img/arrow.png" class="arrow">&nbsp&nbsp&nbspBack&nbsp</a>
+			<a href="notes_tabs.php"><img src="img/arrow.png" class="arrow">&nbsp&nbsp&nbsp<?="{$back}"?>&nbsp</a>
 		</div>
 		<div class="buynow"> 
-			<a href=""><img src="img/cart.png" class="arrow">&nbsp&nbsp&nbspBuy&nbsp</a>
+			<a href="<?="{$row['buy_url']}"?>"><img src="img/cart.png" class="arrow">&nbsp&nbsp&nbsp<?="{$buy}"?>&nbsp</a>
 		</div>
 		<br/>
 	  </div>
