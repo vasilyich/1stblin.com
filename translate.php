@@ -1,6 +1,6 @@
 <?php
 // Function which encapsulates language translaions of bits of html which require localization
-function translate($xsl_filename, $page = NULL)
+function translate($xsl_filename, $page = NULL, $param = NULL)
 {
 	$xml = new DOMDocument();
 	$xml->load('content.xml');
@@ -17,6 +17,9 @@ function translate($xsl_filename, $page = NULL)
 		$proc->setParameter('', 'page', $page );
 	}
 
+	if ( !empty($param) ) {
+		$proc->setParameter('', 'par', $param );
+	}
 	echo $proc->transformToXML( $xml );
 }
 ?>

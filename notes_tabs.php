@@ -1,10 +1,9 @@
 <?php
 include('setlang.php');
-include('translate.php');
-translate('head.xsl');
-?>
+include('translate.php'); ?>
 <!DOCTYPE html>
 <html>
+<?php translate('head.xsl'); ?>
     <body>
     <div class="container">
       <header class="header">
