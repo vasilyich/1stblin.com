@@ -20,7 +20,7 @@ function complete_mail() {
         Контактный email:'.$_POST['email'].' 
         '.$_POST['subject']; 
         // $to - кому отправляем 
-        $to = 'evvas95@mail.ru'; 
+        $to = 'alexey.vasilyev3@googlemail.com'; 
         // $from - от кого 
         $from='alexey.vasilyev.guitar@gmail.com'; 
         mail($to, $mess, "From:".$from); 
