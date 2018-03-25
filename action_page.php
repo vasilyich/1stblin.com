@@ -1,7 +1,5 @@
 <?php
 function complete_mail() { 
-
-
         $_POST['fullname'] =  substr(htmlspecialchars(trim($_POST['fullname'])), 0, 30); 
         $_POST['email'] =  substr(htmlspecialchars(trim($_POST['email'])), 0, 50); 
 		$_POST['subject'] =  substr(htmlspecialchars(trim($_POST['subject'])), 0, 1000000); 
@@ -20,10 +18,10 @@ function complete_mail() {
         Контактный email:'.$_POST['email'].' 
         '.$_POST['subject']; 
         // $to - кому отправляем 
-        $to = 'alexey.vasilyev3@googlemail.com'; 
+        $to = 'alexey.vasilyev.guitar@gmail.com'; 
         // $from - от кого 
         $from='alexey.vasilyev.guitar@gmail.com'; 
-        mail($to, $mess, "From:".$from); 
+        mail($to, $mess, "From:".$_POST['email']); 
         echo 'Спасибо! Ваше письмо отправлено.'; 
 } 
  
@@ -36,6 +34,5 @@ function output_err($num)
     exit(); 
 } 
  
-if (!empty($_POST['submit'])) complete_mail(); 
-
+if (!empty($_POST['email'])) complete_mail(); 
 ?>
