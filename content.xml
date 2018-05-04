@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="aaa.xsl"?>
+<?xml-stylesheet type="text/xsl"?>
 <content>
     <title lang="en">Alexey Vasilyev's place on a web</title>
     <title lang="ru">Сайт Алексея Васильева</title>
@@ -68,5 +68,67 @@
 	        <item>Смотреть онлайн</item>
 	        <item>Загрузить</item>
 	    </tableheader>
+	</page>	
+	<page name="refs" lang="en">
+	    <header>
+	        <headertext>My guitar teacher, maestro and guide in my musical jorney</headertext>
+	        <item>
+	            <name>Maxim Chigintsev's web site</name>
+	            <url>http://4igi.ru/en</url>
+	        </item>
+	        <item>
+	            <name>Guitar School and Forum (Russian) - loads of useful information</name>
+	            <url>http://4igitara.ru</url>
+	        </item>	        
+	    </header>
+	    <header>
+	        <headertext>Luthiers who have build these majestic guitars for me</headertext>
+	        <item>
+	            <name>Alexander Momot</name>
+	            <url>http://momot-guitars.com/en/</url>
+	        </item>
+	        <item>
+	            <name>Manuel Adalid</name>
+	            <url>http://guitarrasesteve.es/en/historia/</url>
+	        </item>
+	    </header>
+	    <header>
+	        <headertext>Guitar related articles and books</headertext>
+	        <item>
+	            <name>Philosophy - Zen Guitar by Philip Toshio Sudo</name>
+	            <url>http://zenguitar.com</url>
+	        </item>
+	    </header>
+	</page>
+	<page name="refs" lang="ru">
+	    <header>
+	        <headertext>Мой гитарный учитель и маэстро</headertext>
+	        <item>
+	            <name>Сайт Максима Чигинцева</name>
+	            <url>http://4igi.ru</url>
+	        </item>
+	        <item>
+	            <name>Форум и гитарная школа Максима Чигинцева - кладезь знаний по музыке и гитаре</name>
+	            <url>http://4igitara.ru</url>
+	        </item>	        
+	    </header>
+	    <header>
+	        <headertext>Гитарные мастера на гитарах которых я играю</headertext>
+	        <item>
+	            <name>Александр Момот</name>
+	            <url>http://momot-guitars.com</url>
+	        </item>
+	        <item>
+	            <name>Мануэль Адалид</name>
+	            <url>http://guitarrasesteve.es/en/historia/</url>
+	        </item>
+	    </header>
+	    <header>
+	        <headertext>Статьи и книги на гитарную тематику</headertext>
+	        <item>
+	            <name>Философия - ЗЕН гитара, Филип Тошио Судо</name>
+	            <url>http://zenguitar.com</url>
+	        </item>
+	    </header>
 	</page>	
 </content>

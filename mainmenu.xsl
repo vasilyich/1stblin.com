@@ -13,10 +13,10 @@
           <li class="menu_item"><a href="notes_tabs.php"><img src="img/music_sheet.png" class="musescoreicon"/>
           	<xsl:value-of select="content/topmenu/menuitems[@lang=$lang]/item[@id='2']"/>
           </a></li>
-          <li class="menu_item"><a href="refs.html"><img src="img/links_icon.png" class="icon"/>
+          <li class="menu_item"><a href="refs.php"><img src="img/links_icon.png" class="icon"/>
           	<xsl:value-of select="content/topmenu/menuitems[@lang=$lang]/item[@id='3']"/>
           </a></li>
-          <li class="menu_item"><a href="contacts.html"><img src="img/contacts_icon.png" class="icon"/>
+          <li class="menu_item"><a href="contacts.php"><img src="img/contacts_icon.png" class="icon"/>
           	<xsl:value-of select="content/topmenu/menuitems[@lang=$lang]/item[@id='4']"/>
           </a></li>
       </ul>
