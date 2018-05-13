@@ -5,6 +5,7 @@ include('translate.php');
 <!DOCTYPE html>
 <html>
 <?php translate('head.xsl'); ?>
+
 <body>
 	<div class="container">
         <header class="header">
@@ -35,28 +36,40 @@ include('translate.php');
 <?php
     if (isset($_GET['message_sent']) && $_GET['message_sent'] == 1) 
     {
-        echo "<p>$sent_msg</p>";
+        echo "<p class='msg'>$sent_msg</p>";
     }
 ?>
-			<form class="form" action="action_page.php" method="post">
-			  <label for="fullname"><?="{$name}"?></label>
-			  <input type="text" id="fullname" name="fullname"/>
+			<form class="form" name="myForm" action ="action_page.php" onsubmit = "return validate()" method="post">
+					<br>
+					<div>
+					  <label for="fullname"><?="{$name}"?></label>
+					  <input type="text" id="fullname" name="fullname"/>
+					</div>
+					  
+					<div>
+					  <label for="email"><?="{$email}"?></label>
+					  <input type="text" id="email" name="email"/>
+					</div>
+					
+					<div>
+					  <label for="subject"><?="{$mailbody}"?></label>
+					  <textarea id="mailbody" name="mailbody" style="height:200px"></textarea>
+					</div>
+					
+					<div>
+					  <input type="submit" value='<?="{$buttonname}"?>'/>
+					</div>
 
-			  <label for="email"><?="{$email}"?></label>
-			  <input type="text" id="email" name="email"/>
-
-			  <label for="subject"><?="{$mailbody}"?></label>
-			  <textarea id="mailbody" name="mailbody" style="height:200px"></textarea>
-
-			  <input type="submit" value='<?="{$buttonname}"?>'/>
 			</form>    
-			<table class="mycontacts">
-				<tr>
-					<td><b>Mail To</b></td>
-					<td>alexey.vasilyev.guitar@gmail.com</td>
-				</tr>
-			</table><br>
+					<table class = "mycontacts">
+						<tr>
+							<td><b>Mail To</b></td>
+							<td>alexey.vasilyev.guitar@gmail.com</td>
+						</tr>
+					</table><br>
 		</div>
 	</div>	
+	<script src = "js/main.js"></script>
+
 </body>
 </html>
